@@ -5,7 +5,8 @@ type ButtonProps = {
     children: React.ReactNode
 }
 
-export const Button: React.FC<ButtonProps> = ({children, type}) => {
+export const Button = ({children, type}: ButtonProps) => {
+  
   return (
     <Styled.Container type={type}>
         {children}

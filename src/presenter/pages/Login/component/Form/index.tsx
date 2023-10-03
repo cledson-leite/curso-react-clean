@@ -3,7 +3,7 @@ import { Input } from '../../../../component/Input'
 import { Error } from './component/Error'
 import * as Styled from './styles'
 
-export const Form: React.FC = () => {
+export const Form  = () => {
   return (
     <Styled.Container>
         <Styled.Title>Login</Styled.Title>

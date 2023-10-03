@@ -1,6 +1,6 @@
 import * as Styled from './styles'
 
-export const Footer: React.FC = () => {
+export const Footer  = () => {
   return (
     <Styled.Container>
         

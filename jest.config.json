@@ -1,9 +1,15 @@
 {
+  "preset": "ts-jest",
   "testEnvironment": "jest-environment-jsdom",
-  "setupFilesAfterEnv": ["<rootDir>/.jest/setup-tests.js"],
+  "setupFilesAfterEnv": [
+    "<rootDir>/.jest/setup-tests.js"
+  ],
   "moduleNameMapper": {
-    "\\.(css|less|sass|scss)$": "identity-obj-proxy",
     "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/.jest/__mocks__/fileMock.js",
-    "@/": "<rootDir>/src/"
+    "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+  },
+  "transform": {
+    "^.+\\.jsx?$": "babel-jest",
+    "^.+\\.tsx?$": "ts-jest"
   }
 }

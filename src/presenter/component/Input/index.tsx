@@ -6,7 +6,7 @@ type InputProps ={
     placeholder: string
 }
 
-export const Input: React.FC<InputProps> = ({type, placeholder}) => {
+export const Input = ({type, placeholder}: InputProps) => {
   const enableInput = (event: React.FocusEvent<HTMLInputElement>): void => {
     event.target.readOnly = false
   }

@@ -1,8 +1,8 @@
 import * as Styled from './styles'
 
-export const Spenner: React.FC = () => {
+export const Spenner  = () => {
   return (
-    <Styled.Container>
+    <Styled.Container role='loading'>
         <div /><div /><div /><div />
     </Styled.Container>
   )

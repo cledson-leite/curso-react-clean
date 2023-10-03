@@ -1,11 +1,19 @@
+import { useContext } from 'react'
 import { Spenner } from '../../../../../../component/Spenner'
 import * as Styled from './styles'
+import { FormContext } from '../../../../../../../context/formContext'
 
-export const Error: React.FC = () => {
+export const Error  = () => {
+    const {loading, error} = useContext(FormContext)
   return (
     <Styled.Container>
-        <Spenner />
-        <Styled.ErrorHessage>Erro</Styled.ErrorHessage>
+        {loading && <Spenner />}
+        {
+        error 
+        && <Styled.ErrorMessage role='message'>
+              {error}
+            </Styled.ErrorMessage>
+          }
     </Styled.Container>
   )
 }

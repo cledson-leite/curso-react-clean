@@ -5,9 +5,9 @@ type ProviderProps = {
   children: JSX.Element | JSX.Element[];
 };
 
-export const ProviderTheme: React.FC<ProviderProps> = ({
+export const ProviderTheme = ({
   children,
-}) => {
+}: ProviderProps) => {
     const theme = Theme
     return <ThemeProvider theme={theme} >{children}</ThemeProvider>
 }

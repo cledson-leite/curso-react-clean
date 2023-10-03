@@ -5,7 +5,7 @@ export const Container =styled.div`
     flex-direction: column;
     align-items: center;
 `
-export const ErrorHessage = styled.span`
+export const ErrorMessage = styled.span`
     text-align: center;
    color: ${({theme}) => theme.primary};
    margin-top: 1rem;
