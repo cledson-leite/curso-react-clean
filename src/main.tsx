@@ -1,9 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {App} from './main/App'
+import { ProviderTheme } from './styles/theme/provider'
+import { App } from './main/App'
+import { Global } from './styles'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <ProviderTheme>
+      <Global />
+      <App />
+    </ProviderTheme>
   </React.StrictMode>,
 )
